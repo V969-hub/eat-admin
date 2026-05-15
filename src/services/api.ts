@@ -23,7 +23,7 @@ export interface PaginatedEnvelope<T> {
   page_info: PageInfo
 }
 
-const baseURL = (import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api').replace(/\/$/, '')
+const baseURL = (import.meta.env.VITE_API_BASE_URL || 'https://www.chilema.online/api').replace(/\/$/, '')
 
 export const adminApi = axios.create({
   baseURL,
